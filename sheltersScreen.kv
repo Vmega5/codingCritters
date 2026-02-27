@@ -1,0 +1,9 @@
+#:kivy 2.3
+<SheltersScreen>:
+    id: shelters
+        SheltersScreenCanvas:
+            FloatLayout:
+                MDTopAppBar:
+                    title: "Shelters"
+                        left_action_items: [["home", lambda x: app.go_home()]]
+                        pos_hint: {"top": 1}
