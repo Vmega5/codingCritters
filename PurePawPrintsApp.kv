@@ -10,7 +10,7 @@
                 padding: "4dp", "4dp"
                 font_style: "H4"
             Image:
-                source: 'purepawprints.png'
+                source: 'pppapp.png'
                 allow_stretch: True
                 keep_ratio: True
                 size_hint_y: None
@@ -20,14 +20,14 @@
                 pos_hint: {"center_x":0.5, "center_y":0.6}
             MDRectangleFlatButton:
                 adaptive_size: True
-                pos_hint: {"center_x":0.37, "center_y":0.34}
+                pos_hint: {"center_x":0.33, "center_y":0.32}
                 text: "Shelters"
-                font_size: "20sp"
-                on_press: app.root.current = 'hobbies'
+                font_size: "30sp"
+                on_press: app.root.current = 'ShelterScreen'
 
             MDRectangleFlatButton:
                 adaptive_size: True
-                pos_hint: {"center_x":0.67, "center_y":0.34}
+                pos_hint: {"center_x":0.70, "center_y":0.32}
                 text: "Posts"
-                font_size: "20sp"
+                font_size: "30sp"
                 on_press: app.root.current = 'favorites'
