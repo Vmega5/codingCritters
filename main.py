@@ -37,7 +37,7 @@ class PurePawPrintsApp(MDApp):
         #Dark Mode
         self.theme_cls.primary_palette = "Brown"
         self.theme_cls.primary_hue = "400"
-        self.theme_cls.theme_style = "Light"
+        self.theme_cls.theme_style = "Dark"
 
         self.sm = ScreenManager()
         self.sm.add_widget(HomeScreen(name='home'))
