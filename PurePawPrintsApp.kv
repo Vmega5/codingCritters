@@ -9,7 +9,6 @@
                 text: "Pure Paw Prints"
                 padding: "4dp", "4dp"
                 font_style: "H4"
-
             Image:
                 source: 'purepawprints.png'
                 allow_stretch: True
@@ -19,3 +18,16 @@
                 width: self.parent.width
                 height: self.parent.width/self.image_ratio
                 pos_hint: {"center_x":0.5, "center_y":0.6}
+            MDRectangleFlatButton:
+                adaptive_size: True
+                pos_hint: {"center_x":0.37, "center_y":0.55}
+                text: "Shelters"
+                font_size: "20sp"
+                on_press: app.root.current = 'hobbies'
+
+            MDRectangleFlatButton:
+                adaptive_size: True
+                pos_hint: {"center_x":0.67, "center_y":0.55}
+                text: "Posts"
+                font_size: "20sp"
+                on_press: app.root.current = 'favorites'
