@@ -21,17 +21,13 @@ class HomeScreen(Screen):
     class HomeScreenCanvas(FloatLayout):
         pass
 
-class HobbiesScreen(Screen):
+class SheltersScreen(Screen):
     pass
-    class HobbiesScreenCanvas(FloatLayout):
+    class SheltersScreenCanvas(FloatLayout):
         pass
 
-class FavoritesScreen(Screen):
-    pass
-    class FavoritesScreenCanvas(FloatLayout):
-        pass
 
-class AboutMeApp(MDApp):
+class PurePawPrintsApp(MDApp):
     def build(self):
         #Light Mode
         #self.theme_cls.primary_palette = "Blue"
@@ -45,12 +41,13 @@ class AboutMeApp(MDApp):
 
         self.sm = ScreenManager()
         self.sm.add_widget(HomeScreen(name='home'))
-        self.sm.add_widget(HobbiesScreen(name='hobbies'))
-        self.sm.add_widget(FavoritesScreen(name='favorites'))
+        self.sm.add_widget(SheltersScreen(name='shelters'))
         return self.sm
 
     def go_home(self):
         self.sm.current = 'home'
 
+
+
 if __name__ == '__main__':
-    AboutMeApp().run()
+    PurePawPrintsApp().run()

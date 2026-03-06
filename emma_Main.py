@@ -5,4 +5,4 @@ if guess == num:
     print("Congratulations! You guessed the correct number.")
 else:
     print("Sorry, that's incorrect. The correct number was", num)
-    print("GOOGOOGAAAGAGAGGAGAGANOURSHITTYIHATEYOUSIGMASSOSOSSOSO")
+    print("GOOGOOGAAAGAGAGGAGAGANOURIHATEYOUSIGMASSOSOSSOSO")

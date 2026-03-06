@@ -1,0 +1,21 @@
+#kivy.space2.3
+<HomeScreen>:
+    id: home
+    HomeScreenCanvas:
+        FloatLayout:
+            MDLabel:
+                adaptive_size: True
+                pos_hint: {"center_x":0.5, "center_y":0.9}
+                text: "Pure Paw Prints"
+                padding: "4dp", "4dp"
+                font_style: "H4"
+
+            Image:
+                source: 'purepawprints.png'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint_y: None
+                size_hint_x: None
+                width: self.parent.width
+                height: self.parent.width/self.image_ratio
+                pos_hint: {"center_x":0.5, "center_y":0.6}
