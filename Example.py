@@ -39,9 +39,9 @@ class AboutMeApp(MDApp):
         #self.theme_cls.theme_style = "Light"
 
         #Dark Mode
-        self.theme_cls.primary_palette = "DeepPurple"
-        self.theme_cls.primary_hue = "400"
-        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.primary_palette = "Green"
+        self.theme_cls.primary_hue = "900"
+        self.theme_cls.theme_style = "Light"
 
         self.sm = ScreenManager()
         self.sm.add_widget(HomeScreen(name='home'))
