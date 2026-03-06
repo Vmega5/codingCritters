@@ -5,7 +5,7 @@
         FloatLayout:
             MDLabel:
                 adaptive_size: True
-                pos_hint: {"center_x":0.5, "center_y":0.9}
+                pos_hint: {"center_x":0.5, "center_y":0.75}
                 text: "Pure Paw Prints"
                 padding: "4dp", "4dp"
                 font_style: "H4"
@@ -13,11 +13,11 @@
                 source: 'pppapp.png'
                 allow_stretch: True
                 keep_ratio: True
-                size_hint_y: None
-                size_hint_x: None
+                size_hint_y: 0.4
+                size_hint_x: 0.4
                 width: self.parent.width
                 height: self.parent.width/self.image_ratio
-                pos_hint: {"center_x":0.5, "center_y":0.6}
+                pos_hint: {"center_x":0.5, "center_y":0.9}
             MDRectangleFlatButton:
                 adaptive_size: True
                 pos_hint: {"center_x":0.33, "center_y":0.32}
@@ -30,4 +30,4 @@
                 pos_hint: {"center_x":0.70, "center_y":0.32}
                 text: "Posts"
                 font_size: "30sp"
-                on_press: app.root.current = 'favorites'
+                on_press: app.root.current = 'posts'
