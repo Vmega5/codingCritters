@@ -29,14 +29,21 @@
                 pos_hint: {"center_x":0.5, "center_y":0.84}
             MDRectangleFlatButton:
                 adaptive_size: True
-                pos_hint: {"center_x":0.33, "center_y":0.65}
+                pos_hint: {"center_x":0.5, "center_y":0.45}
                 text: "Shelters"
                 font_size: "35sp"
                 on_press: app.root.current = 'ShelterScreen'
 
             MDRectangleFlatButton:
                 adaptive_size: True
-                pos_hint: {"center_x":0.70, "center_y":0.65}
+                pos_hint: {"center_x":0.5, "center_y":0.55}
                 text: "Posts"
                 font_size: "35sp"
                 on_press: app.root.current = 'posts'
+
+            MDRectangleFlatButton:
+                adaptive_size: True
+                pos_hint: {"center_x":0.5, "center_y":0.65}
+                text: "Details"
+                font_size: "35sp"
+                on_press: app.root.current = 'details'
