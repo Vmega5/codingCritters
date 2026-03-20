@@ -15,8 +15,11 @@ from pygments.styles.rainbow_dash import GREEN_LIGHT
 #example Android screen size
 Window.size = (412, 896)
 
+from kivy.lang.builder import Builder
 
-#class for each screen and its' canvas
+Builder.load_file('postspage.kv')
+
+#class for each screen and its canvas
 class HomeScreen(Screen):
     pass
     class HomeScreenCanvas(FloatLayout):
@@ -51,7 +54,7 @@ class PurePawPrintsApp(MDApp):
         self.theme_cls.theme_style = "Dark"
 
         self.sm = ScreenManager()
-        self.sm.add_widget(HomeScreen(name='greeneenne'))
+        self.sm.add_widget(HomeScreen(name='home'))
         self.sm.add_widget(SheltersScreen(name='shelters'))
         self.sm.add_widget(PostsPageScreen(name='posts'))
         self.sm.add_widget(DetailsScreen(name='postDetails'))
