@@ -158,6 +158,13 @@
                         halign: "center"
                         size_hint_y: None
                         height: "20dp"
+                        MDRectangleFlatButton:
+                    MDRectangleFlatButton:
+                    adaptive_size: True
+                    pos_hint: {"center_x":0.33, "center_y":0.32}
+                    text: "Details"
+                    font_size: "30sp"
+                    on_press: app.root.current = 'ShelterScreen'
 
 
 <FavoritesScreen>:
