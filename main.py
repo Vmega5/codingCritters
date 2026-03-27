@@ -18,6 +18,8 @@ Window.size = (412, 896)
 from kivy.lang.builder import Builder
 
 Builder.load_file('postspage.kv')
+Builder.load_file('sheltersScreen.kv')
+Builder.load_file('detailspage.kv')
 
 #class for each screen and its canvas
 class HomeScreen(Screen):
@@ -57,7 +59,7 @@ class PurePawPrintsApp(MDApp):
         self.sm.add_widget(HomeScreen(name='home'))
         self.sm.add_widget(SheltersScreen(name='shelters'))
         self.sm.add_widget(PostsPageScreen(name='posts'))
-        self.sm.add_widget(DetailsScreen(name='postDetails'))
+        self.sm.add_widget(DetailsScreen(name='details'))
         return self.sm
 
     def go_home(self):
