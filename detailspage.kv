@@ -4,20 +4,29 @@
     DetailsScreenCanvas:
         FloatLayout:
             MDTopAppBar:
-                title: "Post Details"
+                title: "App Details"
                 left_action_items: [["doghouse.png", lambda x: app.go_home()]]
                 pos_hint: {"top": 1}
                 FloatLayout:
-                    Button:
-                        text: "We Will"
-                        pos: 50, 10
-                        size_hint: .1, .2
-                    Button:
-                        text: "Wee Wiill"
-                        pos: 200, 200
-                        size_hint: .4, .2
+            Image:
+                source: 'paragraphppp.jpg'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint_y: None
+                size_hint_x: None
+                width: self.parent.width
+                height: self.parent.width/self.image_ratio
+                pos_hint: {"center_x":0.5, "center_y":0.4}
+            Image:
+                source: 'cat2.jpg'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint_y: None
+                size_hint_x: None
+                width: self.parent.width
+                height: self.parent.width/self.image_ratio
+                pos_hint: {"center_x":0.5, "center_y":0.8}
 
-                    Button:
-                        text: "ROCK YOU!!"
-                        pos_hint: {'x': .3, 'y': .6}
-                        size_hint: .5, .2
+
+
+
