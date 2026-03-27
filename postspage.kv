@@ -11,11 +11,11 @@
                 pos_hint: {"top": 1}
 
             MDGridLayout:
-                cols: 2  # 🔹 2 columns
-                rows: 3  # 🔹 3 rows
-                spacing: "10dp"
+                cols: 1  # 🔹  columns
+                rows: 6  # 🔹  rows
+                spacing: "15dp"
                 padding: "10dp"
-                size_hint: 1, 0.8
+                size_hint: 0.5, 0.5
                 pos_hint: {"center_x": 0.5, "center_y": 0.45}
 
                 # 🔹 Hobby 1
@@ -33,6 +33,11 @@
                         halign: "center"
                         size_hint_y: None
                         height: "20dp"
+                    MDRectangleFlatButton:
+                        pos_hint: {"center_x":0.5, "center_y":0.45}
+                        text: "Details"
+                        font_size: "10sp"
+                        on_press: app.root.current = 'DetailsScreen'
 
                 # 🔹 Hobby 2
                 BoxLayout:
@@ -66,6 +71,11 @@
                         halign: "center"
                         size_hint_y: None
                         height: "20dp"
+                    MDRectangleFlatButton:
+                        pos_hint: {"center_x":0.5, "center_y":0.45}
+                        text: "Details"
+                        font_size: "10sp"
+                        on_press: app.root.current = 'DetailsScreen'
 
                 # 🔹 Hobby 4
                 BoxLayout:
@@ -83,6 +93,11 @@
                         halign: "center"
                         size_hint_y: None
                         height: "20dp"
+                    MDRectangleFlatButton:
+                        pos_hint: {"center_x":0.5, "center_y":0.45}
+                        text: "Details"
+                        font_size: "10sp"
+                        on_press: app.root.current = 'DetailsScreen'
 
 
                 # 🔹 Hobby 5
@@ -101,7 +116,11 @@
                         halign: "center"
                         size_hint_y: None
                         height: "20dp"
-                    MDrectangleFlatButton:
+                    MDRectangleFlatButton:
+                        pos_hint: {"center_x":0.5, "center_y":0.45}
+                        text: "Details"
+                        font_size: "10sp"
+                        on_press: app.root.current = 'DetailsScreen'
 
 
 <FavoritesScreen>:
