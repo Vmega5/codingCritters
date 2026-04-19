@@ -4,118 +4,18 @@
     SheltersScreenCanvas:
         FloatLayout:
             MDTopAppBar:
-                title: "Posts - Leave a Print   "
+                title: "Shelters"
                 left_action_items: [["doghouse.png", lambda x: app.go_home()]]
                 pos_hint: {"top": 1}
-
-            MDGridLayout:
-                cols: 1  # 🔹  columns
-                rows: 6  # 🔹  rows
-                spacing: "15dp"
-                padding: "10dp"
-                size_hint: 0.5, 0.5
-                pos_hint: {"center_x": 0.5, "center_y": 0.45}
-
-                # 🔹 Hobby 1
-                BoxLayout:
-                    orientation: "vertical"
-                    spacing: "4dp"
-                    Image:
-                        source: "Cat_November_2010-1a.jpg"
-                        size_hint_y: None
-                        height: self.width
-                        allow_stretch: True
-                        keep_ratio: True
-                    MDLabel:
-                        text: "Cat"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'DetailsScreen'
-
-                # 🔹 Hobby 2
-                BoxLayout:
-                    orientation: "vertical"
-                    spacing: "4dp"
-                    Image:
-                        source: "Cat_November_2010-1a.jpg"
-                        size_hint_y: None
-                        height: self.width
-                        allow_stretch: True
-                        keep_ratio: True
-                    MDLabel:
-                        text: "Cat"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-
-                # 🔹 Hobby 3
-                BoxLayout:
-                    orientation: "vertical"
-                    spacing: "4dp"
-                    Image:
-                        source: "Cat_November_2010-1a.jpg"
-                        size_hint_y: None
-                        height: self.width
-                        allow_stretch: True
-                        keep_ratio: True
-
-                    MDLabel:
-                        text: "Dog"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'DetailsScreen'
-
-                # 🔹 Hobby 4
-                BoxLayout:
-                    orientation: "vertical"
-                    spacing: "4dp"
-                    Image:
-                        source: "taskmaster.jpg"
-                        size_hint_y: None
-                        height: self.width
-                        allow_stretch: True
-                        keep_ratio: True
-
-                    MDLabel:
-                        text: "Parrot"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'DetailsScreen'
-
-
-                # 🔹 Hobby 5
-                BoxLayout:
-                    orientation: "vertical"
-                    spacing: "4dp"
-                    Image:
-                        source: "captain_rex_sq.jpg"
-                        size_hint_y: None
-                        height: self.width
-                        allow_stretch: True
-                        keep_ratio: True
-
-                    MDLabel:
-                        text: "Bunny"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'DetailsScreen'
+            Image:
+                source: "map.jpg"
+                size_hint_y: None
+                height: self.width
+                allow_stretch: True
+                keep_ratio: True
+                pos_hint: {"top": 0.8}
+            MDLabel:
+                text: "Maps"
+                halign: "center"
+                size_hint_y: None
+                height: "20dp"

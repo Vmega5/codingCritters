@@ -13,8 +13,8 @@
             MDGridLayout:
                 cols: 1  # 🔹  columns
                 rows: 6  # 🔹  rows
-                spacing: "300dp"
-                padding: "30dp"
+                spacing: "200dp"
+                padding: "10dp"
                 size_hint: 0.5, 0.5
                 pos_hint: {"center_x": 0.5, "center_y": 0.45}
 
@@ -23,21 +23,11 @@
                     orientation: "vertical"
                     spacing: "4dp"
                     Image:
-                        source: "Cat_November_2010-1a.jpg"
+                        source: "post1.png"
                         size_hint_y: None
                         height: self.width
                         allow_stretch: True
                         keep_ratio: True
-                    MDLabel:
-                        text: "Cat"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'details'
 
                 # 🔹 Hobby 2
                 BoxLayout:
@@ -45,79 +35,37 @@
                     spacing: "4dp"
                     #- i like ice cream
                     Image:
-                        source: "Cat_November_2010-1a.jpg"
+                        source: "post2.png"
                         size_hint_y: None
                         height: self.width
                         allow_stretch: True
                         keep_ratio: True
-                    MDLabel:
-                        text: "Cat"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'DetailsScreen'
 
                 # 🔹 Hobby 3
                 BoxLayout:
                     orientation: "vertical"
                     spacing: "4dp"
                     Image:
-                        source: "Cat_November_2010-1a.jpg"
+                        source: "post3.png"
                         size_hint_y: None
                         height: self.width
                         allow_stretch: True
                         keep_ratio: True
-
-                    MDLabel:
-                        text: "Dog"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'details'
 
                 # 🔹 Hobby 4
                 BoxLayout:
                     orientation: "vertical"
                     spacing: "4dp"
                     Image:
-                        source: "taskmaster.jpg"
+                        source: "post4.png"
                         size_hint_y: None
                         height: self.width
                         allow_stretch: True
                         keep_ratio: True
 
-                    MDLabel:
-                        text: "Parrot"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'details'
 
 
 
-
-                    MDLabel:
-                        text: "Bunny"
-                        halign: "center"
-                        size_hint_y: None
-                        height: "20dp"
-                    MDRectangleFlatButton:
-                        pos_hint: {"center_x":0.5, "center_y":0.45}
-                        text: "Details"
-                        font_size: "10sp"
-                        on_press: app.root.current = 'details'
 
 
 <FavoritesScreen>:
