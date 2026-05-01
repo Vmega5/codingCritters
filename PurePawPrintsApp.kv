@@ -47,3 +47,13 @@
                 text: "Details"
                 font_size: "35sp"
                 on_press: app.root.current = 'details'
+
+            Image:
+                source: 'lace.png'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint_y: None
+                size_hint_x: None
+                width: self.parent.width
+                height: self.parent.width/self.image_ratio
+                pos_hint: {"center_x":0.5, "center_y":0.38}
